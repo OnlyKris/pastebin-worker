@@ -14,28 +14,28 @@ rules = [
 
 [[routes]]
 # Refer to https://developers.cloudflare.com/workers/wrangler/configuration/#routes
-pattern = "shz.al"
-custom_domain = true
+pattern = "pastebin.m78.dev"
+custom_domain = false
 
 [[kv_namespaces]]
 binding = "PB"  # do not touch this
-id = "cc398e983a234aa19de5ea6af571a483"  # id of your KV namespace
+id = "04caa701dfe9451e92022efc91636b90"  # id of your KV namespace
 
 [vars]
 # must be consistent with your routes
-BASE_URL = "https://shz.al"
+BASE_URL = "https://pastebin.m78.dev"
 
 # url to repo, displayed in index page
 REPO = "https://github.com/SharzyL/pastebin-worker"
 
 # url to favicon
-FAVICON = "https://sharzy.in/favicon-32x32.png"
+  FAVICON = "https://files.uhoo.cc/2f3e90f64d1797423201115f8fb1eae4_Pasta_1024x1024x32-5aSZOa.png"
 
 # the name displayed in TOS
-TOS_MAINTAINER = "Sharzy"
+TOS_MAINTAINER = "M78 Pastebin"
 
 # the email displayed in TOS
-TOS_MAIL = "pb@shz.al"
+TOS_MAIL = ""
 
 # Cache-Control max-age for static pages
 CACHE_STATIC_PAGE_AGE = 7200
