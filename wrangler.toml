@@ -15,7 +15,7 @@ rules = [
 [[routes]]
 # Refer to https://developers.cloudflare.com/workers/wrangler/configuration/#routes
 pattern = "pastebin.m78.dev"
-custom_domain = false
+custom_domain = true
 
 [[kv_namespaces]]
 binding = "PB"  # do not touch this
@@ -29,7 +29,7 @@ BASE_URL = "https://pastebin.m78.dev"
 REPO = "https://github.com/SharzyL/pastebin-worker"
 
 # url to favicon
-  FAVICON = "https://files.uhoo.cc/2f3e90f64d1797423201115f8fb1eae4_Pasta_1024x1024x32-5aSZOa.png"
+FAVICON = "https://files.uhoo.cc/2f3e90f64d1797423201115f8fb1eae4_Pasta_1024x1024x32-5aSZOa.png"
 
 # the name displayed in TOS
 TOS_MAINTAINER = "M78 Pastebin"
