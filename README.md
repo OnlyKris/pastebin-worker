@@ -57,7 +57,7 @@ user1 = "passwd1"
 user2 = "passwd2"
 ```
 
-Now every access to PUT or POST request, and every access to the index page, requires an HTTP basic auth with the user-password pair listed above. For example: 
+Now every access to POST request, and every access to static pages, requires an HTTP basic auth with the user-password pair listed above. For example:
 
 ```shell
 $ curl example-pb.com
@@ -76,4 +76,32 @@ $ curl -u admin1:this-is-passwd-1 -Fc=@/path/to/file example-pb.com
   "admin": "https://example-pb.com/YCDX:Sij23HwbMjeZwKznY3K5trG8",
   "isPrivate": false
 }
+```
+
+## Administration
+Delete a paste:
+```console
+$ yarn delete-paste <name-of-paste>
+```
+
+List pastes:
+```console
+$ yarn wrangler kv:key list --binding PB > kv_list.json
+```
+
+## Development
+
+Run a local simulator:
+```console
+$ yarn dev
+```
+
+Run tests:
+```console
+$ yarn test
+```
+
+Run tests with coverage report:
+```console
+$ yarn coverage
 ```
